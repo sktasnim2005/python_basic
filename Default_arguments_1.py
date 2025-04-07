@@ -1,9 +1,12 @@
+#4 types of arguments 
+# 1. positional arguments  2.Default arguments  3. keyword arguments  4.arbitary arguments
+
+
 #default arguments = A default value for certain parameters
 # default is used when that argument is ommited
 # it makes function more flexible , reduces the number of arguments
 
 
-# 1. positional arguments 2.Default arguments 3. keyword arguments 4.arbitary arguments
 
 def net_price(list_price, discount, tax):
     return list_price * (1-discount) * (1+tax)
