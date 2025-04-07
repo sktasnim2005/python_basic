@@ -1,3 +1,7 @@
+#4 types of arguments 
+# 1. positional arguments  2.Default arguments  3. keyword arguments  4.arbitary arguments
+
+
 import time
 
 print("-------Part 1 -------")
