@@ -1,6 +1,5 @@
 # Python Banking Program
 
-
 def show_balance(balance):
     print(f"Your balance is ${balance:.2f}")
 
@@ -54,6 +53,6 @@ def main():
                 print("This is not a valid choice")
 
 
-
+ 
 if __name__ == '__main__':
                          main()
