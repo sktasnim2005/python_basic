@@ -8,7 +8,7 @@ from wordCollection import words_by_category
 
 # defining a class to handle the whole game.
 class HangmanApp:
-    def __init__(self, master): # This is the constructor – it sets everything up when the app starts
+    def __init__(self, master): # This is the constructor – it sets everything up when the app starts. here master is the main window and self is the instance of the class.
         self.master = master    # master is the main window. I set the title to "Hangman Game".
         self.master.title("Hangman Game")
         self.max_wrong = 6
