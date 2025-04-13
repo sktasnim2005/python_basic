@@ -103,6 +103,6 @@ class HangmanApp:
         self.update_image()
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    app = HangmanApp(root)
-    root.mainloop()
+        root = tk.Tk()
+        app = HangmanApp(root)
+        root.mainloop()
