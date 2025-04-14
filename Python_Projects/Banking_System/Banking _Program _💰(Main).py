@@ -31,6 +31,7 @@ def main():
         is_running = True
 
         while is_running:
+            print("----------------------------------------------------------------")
             print("---- Banking Program ----")
             print("1.Show Balance")
             print("2.Deposit")
