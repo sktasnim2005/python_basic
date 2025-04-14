@@ -1,34 +1,7 @@
+# gui_app.py
 import tkinter as tk
 from tkinter import messagebox
-import random
-import string
-
-def generate_password(min_length, numbers=True, special_characters=True):
-    letters = string.ascii_letters
-    digits = string.digits
-    special = string.punctuation
-
-    characters = letters
-    if numbers:
-        characters += digits
-    if special_characters:
-        characters += special
-
-    if not characters:
-        return "Choose at least one character type!"
-
-    password = []
-    if numbers:
-        password.append(random.choice(digits))
-    if special_characters:
-        password.append(random.choice(special))
-    password.append(random.choice(letters))
-
-    while len(password) < min_length:
-        password.append(random.choice(characters))
-
-    random.shuffle(password)
-    return ''.join(password)
+from password_generator import generate_password  # Importing the function
 
 def on_generate():
     try:
@@ -45,13 +18,15 @@ def on_generate():
     password = generate_password(length, use_numbers, use_special)
     result_var.set(password)
 
-# GUI
+# GUI setup
 root = tk.Tk()
 root.title("Password Generator")
 
+
+# Widgets
 tk.Label(root, text="Password Length:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
 length_entry = tk.Entry(root)
-length_entry.insert(0, "10")  # Default length
+length_entry.insert(0, "10")
 length_entry.grid(row=0, column=1, padx=10)
 
 numbers_var = tk.BooleanVar(value=True)
