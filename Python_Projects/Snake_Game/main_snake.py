@@ -164,4 +164,3 @@ food = Food()
 next_turn(snake, food)
 
 window.mainloop()
-
